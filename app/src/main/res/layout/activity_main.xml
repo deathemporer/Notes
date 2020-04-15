@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80e27e"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/colorPrimaryDark">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_marginLeft="16dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/titlepage"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:fontFamily="@font/mm"
+                   android:text="Notes"
+                   android:textColor="#fff"
+                   android:textSize="32sp"></TextView>
+
+               <TextView
+                   android:id="@+id/subtitlepage"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/ml"
+                   android:text="Your to-do list"
+                   android:textColor="#4a4e6a"
+                   android:textSize="18sp"></TextView>
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/btnAddNew"
+               android:layout_width="52dp"
+               android:layout_height="52dp"
+               android:layout_marginLeft="200dp"
+               android:layout_marginTop="35dp"
+               android:background="@drawable/bgbtnnew"
+               android:fontFamily="@font/ml"
+               android:text="+"
+               android:textAlignment="center"
+               android:textColor="#000"
+               android:textSize="38sp" />
+
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ournote"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/endtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/ml"
+        android:text="No More Notes"
+        android:textAlignment="center"
+        android:textColor="#4a4e6a"
+        android:textSize="16sp"></TextView>
+</LinearLayout>
